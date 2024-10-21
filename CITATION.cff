@@ -1,119 +1,35 @@
-# This CITATION.cff reference content was generated from Zotero.
-references:
-  - title: >-
-      Brain dynamics supported by a hierarchy of complex correlation patterns defining a robust functional architecture
-    type: journalArticle
-    database: DOI.org (Crossref)
-    date-accessed: 2024-10-21T18:42:53Z
-    issn: 24054712
-    issue: 8
-    journal: Cell Systems
-    languages: 
-      - en
-    pages: 770-786.e5
-    volume: 15
-    url: https://linkinghub.elsevier.com/retrieve/pii/S2405471224002023
-    authors: 
-      - family-names: Varga
-        given-names: Levente
-      - family-names: Moca
-        given-names: Vasile V.
-      - family-names: Molnár
-        given-names: Botond
-      - family-names: Perez-Cervera
-        given-names: Laura
-      - family-names: Selim
-        given-names: Mohamed Kotb
-      - family-names: Díaz-Parra
-        given-names: Antonio
-      - family-names: Moratal
-        given-names: David
-      - family-names: Péntek
-        given-names: Balázs
-      - family-names: Sommer
-        given-names: Wolfgang H.
-      - family-names: Mureșan
-        given-names: Raul C.
-      - family-names: Canals
-        given-names: Santiago
-      - family-names: Ercsey-Ravasz
-        given-names: Maria
-    editors: 
-      - family-names: Varga
-        given-names: Levente
-      - family-names: Moca
-        given-names: Vasile V.
-      - family-names: Molnár
-        given-names: Botond
-      - family-names: Perez-Cervera
-        given-names: Laura
-      - family-names: Selim
-        given-names: Mohamed Kotb
-      - family-names: Díaz-Parra
-        given-names: Antonio
-      - family-names: Moratal
-        given-names: David
-      - family-names: Péntek
-        given-names: Balázs
-      - family-names: Sommer
-        given-names: Wolfgang H.
-      - family-names: Mureșan
-        given-names: Raul C.
-      - family-names: Canals
-        given-names: Santiago
-      - family-names: Ercsey-Ravasz
-        given-names: Maria
-    recipients: 
-      - family-names: Varga
-        given-names: Levente
-      - family-names: Moca
-        given-names: Vasile V.
-      - family-names: Molnár
-        given-names: Botond
-      - family-names: Perez-Cervera
-        given-names: Laura
-      - family-names: Selim
-        given-names: Mohamed Kotb
-      - family-names: Díaz-Parra
-        given-names: Antonio
-      - family-names: Moratal
-        given-names: David
-      - family-names: Péntek
-        given-names: Balázs
-      - family-names: Sommer
-        given-names: Wolfgang H.
-      - family-names: Mureșan
-        given-names: Raul C.
-      - family-names: Canals
-        given-names: Santiago
-      - family-names: Ercsey-Ravasz
-        given-names: Maria
-    translators: 
-      - family-names: Varga
-        given-names: Levente
-      - family-names: Moca
-        given-names: Vasile V.
-      - family-names: Molnár
-        given-names: Botond
-      - family-names: Perez-Cervera
-        given-names: Laura
-      - family-names: Selim
-        given-names: Mohamed Kotb
-      - family-names: Díaz-Parra
-        given-names: Antonio
-      - family-names: Moratal
-        given-names: David
-      - family-names: Péntek
-        given-names: Balázs
-      - family-names: Sommer
-        given-names: Wolfgang H.
-      - family-names: Mureșan
-        given-names: Raul C.
-      - family-names: Canals
-        given-names: Santiago
-      - family-names: Ercsey-Ravasz
-        given-names: Maria
-    date-published: 2024-08
-    identifiers: 
-      - type: doi
-        value: 10.1016/j.cels.2024.07.003
+cff-version: 1.2.0
+message: If you use this software, please cite it as below.
+authors:
+- family-names: Varga
+  given-names: Levente
+- family-names: Moca
+  given-names: Vasile V.
+- family-names: Molnár
+  given-names: Botond
+- family-names: Perez-Cervera
+  given-names: Laura
+- family-names: Selim
+  given-names: Mohamed Kotb
+- family-names: Díaz-Parra
+  given-names: Antonio
+- family-names: Moratal
+  given-names: David
+- family-names: Péntek
+  given-names: Balázs
+- family-names: Sommer
+  given-names: Wolfgang H.
+- family-names: Mureșan
+  given-names: Raul C.
+- family-names: Canals
+  given-names: Santiago
+- family-names: Ercsey-Ravasz
+  given-names: Maria
+title: Brain dynamics supported by a hierarchy of complex correlation patterns defining a robust functional architecture
+doi: 10.1016/j.cels.2024.07.003
+issue: 8
+journal: Cell Systems
+pages: 770-786.e5
+volume: 15
+url: https://linkinghub.elsevier.com/retrieve/pii/S2405471224002023
+date-published: 2024-08
