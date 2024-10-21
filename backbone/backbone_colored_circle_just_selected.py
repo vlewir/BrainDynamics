@@ -6,7 +6,7 @@ import matplotlib.colors
 
 #usage: python backbone_colored_circle_just_selected.py
 
-sorting_index = np.loadtxt('../MaxAbs_edds_sorting_index_ltof.txt', dtype=int)
+sorting_index = np.loadtxt('../MaxAbs_ewds_sorting_index_ltof.txt', dtype=int)
 
 chList = np.loadtxt('../ChList.txt', dtype=str)
 
@@ -14,7 +14,7 @@ chList_color = np.loadtxt('../ChList_colored.txt', dtype=str)
 
 source, target = np.loadtxt('../edgelist.txt', unpack=True, dtype=int)
 
-data = np.loadtxt('../MaxAbs_edds_just_3.txt', skiprows=3)
+data = np.loadtxt('../MaxAbs_ewds_just_3.txt', skiprows=3)
 
 data = data[:3570,:]
 

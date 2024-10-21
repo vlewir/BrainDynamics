@@ -17,11 +17,11 @@ cl = sys.argv[4]
 
 sorting = sys.argv[5]
 
-ED_average = sys.argv[6]
+Cliffs_average = sys.argv[6]
 
-ED_values = np.loadtxt(ED_average)
+Cliffs_values = np.loadtxt(Cliffs_average)
 
-ED_values *= -1.0 # switch order
+Cliffs_values *= -1.0 # switch order
 
 data = np.loadtxt(filename, skiprows=4)
 
@@ -58,31 +58,9 @@ else:
 
 fig.tight_layout(rect=[0.13, 0.07, 0.88, 0.95], w_pad=3, h_pad=8.0)
 
-# names = ["G1 - control - part 1\n", "G1 - EtOH - part 2\n"]
-
 names = ["G1 - control\n", "G1 - EtOH\n"]
 
 # names = ["G2 - tp1\n", "G2 - tp2\n"]
-
-# names = ["G1 - control\n", "G2 - tp1\n"]
-
-# names = ["G2 - tp2\n", "G1 - EtOH\n"]
-
-# names = ["G1 - control\n", "G2 - tp2\n"]
-
-# names = ["G1 - EtOH\n", "G1 - control\n"]
-
-# names = ["G1 - EtOH\n", "G2 - tp1\n"]
-
-# names = ["G1 - EtOH\n", "G2 - tp2\n"]
-
-# names = ["G2 - tp1\n", "G1 - control\n"]
-
-# names = ["G2 - tp1\n", "G1 - EtOH\n"]
-
-# names = ["G2 - tp2\n", "G1 - control\n"]
-
-# names = ["G2 - tp2\n", "G2 - tp1\n"]
 
 ax = plt.subplot(144)
 
@@ -90,7 +68,7 @@ ax.set_position([0.89, 0.0925, 0.06, 0.839])
 
 plt.title("$\delta_n \delta_p$\n")
 
-tmp = ED_values.copy()
+tmp = Cliffs_values.copy()
 
 tmp = np.abs(tmp)
 
@@ -131,9 +109,9 @@ ax.set_position([0.8, 0.0925, 0.06, 0.839])
 
 plt.title("$\delta_n \delta_p$\n")
 
-print(np.amin(ED_values), np.amax(ED_values))
+print(np.amin(Cliffs_values), np.amax(Cliffs_values))
 
-im = plt.imshow(ED_values[sorting_index], cmap=cm.coolwarm, interpolation='nearest', aspect='auto', vmin=-0.5, vmax=0.5)
+im = plt.imshow(Cliffs_values[sorting_index], cmap=cm.coolwarm, interpolation='nearest', aspect='auto', vmin=-0.5, vmax=0.5)
 
 plt.yticks([])
 

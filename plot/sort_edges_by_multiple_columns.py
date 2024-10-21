@@ -2,7 +2,7 @@ import numpy as np
 import operator
 import sys
 
-#usage: python sort_edges_by_multiple_columns.py 30 MaxAbs_edds.txt
+#usage: python sort_edges_by_multiple_columns.py 30 MaxAbs_ewds.txt
 
 bin_size = int(sys.argv[1])
 

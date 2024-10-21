@@ -17,13 +17,13 @@ cl = sys.argv[4]
 
 sorting = sys.argv[5]
 
-ED_average = sys.argv[6]
+Cliffs_average = sys.argv[6]
 
 Marozzi = sys.argv[7]
 
-ED_values = np.loadtxt(ED_average)
+Ciffs_values = np.loadtxt(Cliffs_average)
 
-ED_values *= -1.0 # switch order
+Ciffs_values *= -1.0 # switch order
 
 pvalues = np.loadtxt(Marozzi)
 
@@ -57,26 +57,6 @@ names = ["G1 - control\n", "G1 - EtOH\n"]
 
 # names = ["G2 - tp1\n", "G2 - tp2\n"]
 
-# names = ["G1 - control\n", "G2 - tp1\n"]
-
-# names = ["G2 - tp2\n", "G1 - EtOH\n"]
-
-# names = ["G1 - control\n", "G2 - tp2\n"]
-
-# names = ["G1 - EtOH\n", "G1 - control\n"]
-
-# names = ["G1 - EtOH\n", "G2 - tp1\n"]
-
-# names = ["G1 - EtOH\n", "G2 - tp2\n"]
-
-# names = ["G2 - tp1\n", "G1 - control\n"]
-
-# names = ["G2 - tp1\n", "G1 - EtOH\n"]
-
-# names = ["G2 - tp2\n", "G1 - control\n"]
-
-# names = ["G2 - tp2\n", "G2 - tp1\n"]
-
 ax = plt.subplot(144)
 
 ax.set_position([0.89, 0.0925, 0.04, 0.839])
@@ -105,11 +85,11 @@ ax.set_position([0.8, 0.0925, 0.04, 0.839])
 
 plt.title("$\delta$\n")
 
-ED_values = np.expand_dims(ED_values, axis=1)
+Ciffs_values = np.expand_dims(Ciffs_values, axis=1)
 
-print(np.amin(ED_values), np.amax(ED_values))
+print(np.amin(Ciffs_values), np.amax(Ciffs_values))
 
-im = plt.imshow(ED_values[sorting_index], cmap=cm.coolwarm, interpolation='nearest', aspect='auto', vmin=-0.5, vmax=0.5)
+im = plt.imshow(Ciffs_values[sorting_index], cmap=cm.coolwarm, interpolation='nearest', aspect='auto', vmin=-0.5, vmax=0.5)
 
 plt.yticks([])
 

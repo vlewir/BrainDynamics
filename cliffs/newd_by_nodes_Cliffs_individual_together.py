@@ -1,11 +1,7 @@
 import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib import cm
-import matplotlib
 import sys
-import os
 
-#usage: python newd_by_nodes_Cliffs_individual_together.py MaxAbs ChList.txt MaxAbs_newds_by_each_raw_data.txt
+#usage: python newd_by_nodes_Cliffs_individual_together.py MaxAbs
 
 def ED(A,B):
 
@@ -52,33 +48,12 @@ def ED(A,B):
 
 name = sys.argv[1]
 
-cl = sys.argv[2]
-
-bins = sys.argv[3]
-
-ticks = np.loadtxt(cl, dtype=str)
-
-lines = [line.rstrip('\n') for line in open(bins)]
-
-bin_min, bin_max = lines[0].split(" ")
-
-bin_min = np.round(float(bin_min),2)
-bin_max = np.round(float(bin_max),2)
-
-fontsize = 36
-
-matplotlib.rcParams.update({'font.size': fontsize})
 
 names = ["Control", "EtOH"]
-tnames = {}
-tnames["Control"] = "G1 - control"
-tnames["EtOH"] = "G1 - EtOH"
 
 # names = ["TP1", "TP2"]
-# tnames = {}
-# tnames["TP1"] = "G2 - tp1"
-# tnames["TP2"] = "G2 - tp2"
 
+# -----
 
 for i in range(1,19):
 
@@ -89,7 +64,6 @@ for i in range(1,19):
 
 		if (subplot_index == 0):
 			A = data
-			plt.subplots_adjust(right=0.9)
 		else:
 			B = data
 

@@ -7,11 +7,11 @@ from matplotlib import cm
 
 edge_colors = np.loadtxt('edge_colors_selected.txt')
 
-data = np.loadtxt('../MaxAbs_edds_just_3.txt', skiprows=3)
+data = np.loadtxt('../MaxAbs_ewds_just_3.txt', skiprows=3)
 
 data = data[:3570,:]
 
-sorting_index = np.loadtxt('../MaxAbs_edds_sorting_index_ltof.txt', dtype=int)
+sorting_index = np.loadtxt('../MaxAbs_ewds_sorting_index_ltof.txt', dtype=int)
 
 fig, axes = plt.subplots(nrows=1, ncols=2, figsize=(30,40))
 

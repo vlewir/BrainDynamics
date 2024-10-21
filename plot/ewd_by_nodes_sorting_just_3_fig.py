@@ -5,7 +5,7 @@ import matplotlib
 import sys
 import os
 
-#usage: python ewds_by_nodes_sorting_just_3_fig.py MaxAbs 30 MaxAbs_edds_just_3.txt MaxAbs_edds_sorting_index_ltof.txt
+#usage: python ewds_by_nodes_sorting_just_3_fig.py MaxAbs 30 MaxAbs_ewds_just_3.txt MaxAbs_ewds_sorting_index_ltof.txt
 
 name = sys.argv[1]
 
