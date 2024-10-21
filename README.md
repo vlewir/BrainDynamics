@@ -1,0 +1,1 @@
+Please cite our publication when using our code: **Varga, L.** et al. Brain dynamics supported by a hierarchy of complex correlation patterns defining a robust functional architecture. _Cell Systems_, Volume **15**, Issue **8**, 770 - 786.e5 (2024). DOI: https://doi.org/10.1016/j.cels.2024.07.003
